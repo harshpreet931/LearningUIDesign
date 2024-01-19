@@ -1,0 +1,152 @@
+/* The color pallet -> 
+    #e63946 -> red
+    #f1faee -> some light bluewhiteish
+    #a8dadc -> mid blue
+    #457b9d -> blue
+    #1d3557 -> dark blue
+*/
+*{
+    font-family: 'Lexend', sans-serif;
+}
+
+body{
+    background-color: #333;
+}
+section{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    height: 100vh;
+    margin: 0 auto;
+}
+
+.container{
+    margin: 0 auto;
+    width: 95%;
+    height: 95vh;
+    border: 2px solid black;
+
+    display: flex;
+    border-radius: 2rem;
+
+}
+
+.left{
+    /* border: 2px solid black; */
+    height: 95vh;
+    flex-grow: 1;
+    max-width: 30%;
+    background-color: #a8dadc;
+    border-radius: 2rem 0rem 0rem 2rem;
+    background-image: url('japan.jpg');
+    background-size: cover;
+    background-position: center;
+    position: relative;
+
+    display: flex;
+    align-items: flex-start;
+    justify-content: center;
+    flex-direction: column;
+    box-shadow: 0 0 10px rgba(168, 218, 220, 0.7); /* blue glow */
+}
+.left h1{
+    z-index: 1;
+    position: relative;
+    font-family: 'Lexend', sans-serif;
+    font-size: 5vw;
+    text-align:left;
+    margin: 0 auto;
+    margin-bottom: 1vw;
+}
+.left .text-container{
+    align-self: center;
+}
+.left::before{
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(168, 218, 220, 0.7); /* blue with 30% opacity */
+    border-radius: 2rem 0rem 0rem 2rem;
+}
+
+.right{
+    /* border: 2px solid black; */
+    height: 95vh;
+    flex-grow: 1;
+    background-color: #f1faee;
+    border-radius: 0rem 2rem 2rem 0rem;
+
+    display: flex;
+    flex-direction: column;
+    box-shadow: 0 0 10px #f1faee;
+}
+
+.logotext{
+    font-family: 'Lexend', sans-serif;
+    font-size: 1rem;
+}
+
+.top{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    height: 15%;
+}
+
+.bottom{
+    width: inherit;
+    height: 85%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.signup{
+    display: flex;
+    gap: 3vw;
+    margin-right: 2vw;
+}
+
+.logo{
+    display: flex;
+    gap: 0.5vw;
+    margin-left: 2vw;
+}
+
+.signup-form{
+    display: flex;
+    flex-direction: column;
+    width: 80%;
+}
+
+.signup-form label{
+    margin-bottom: 0.5em;
+    color: #333;
+}
+
+.signup-form input{
+    margin-bottom: 1em;
+    padding: 0.5em;
+    border: 2px solid #333;
+    border-radius: 5px;
+}
+
+.signup-form button {
+    padding: 0.5em 1em;
+    color: #fff;
+    background-color: #333;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.checkbox-container {
+    display: flex;
+    align-items: center;
+}
+
